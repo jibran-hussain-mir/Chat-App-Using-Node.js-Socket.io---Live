@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <!-- Client side version of socket io library provided to us -->
+  </head>
+  <body>
+    <form id="message-form">
+      <label for="message">Enter the Message : </label>
+      <input type="text" id="message" placeholder="message" />
+      <button onSubmit="handleFormSubmit()">Send</button>
+    </form>
+    <button id="send-location">Send Location</button>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+  </body>
+</html>
