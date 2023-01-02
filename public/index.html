@@ -2,16 +2,26 @@
 <html>
   <head>
     <title>Chat App</title>
-    <!-- Client side version of socket io library provided to us -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./img/favicon.png" />
   </head>
   <body>
-    <form id="message-form">
-      <label for="message">Enter the Message : </label>
-      <input type="text" id="message" placeholder="message" />
-      <button onSubmit="handleFormSubmit()">Send</button>
-    </form>
-    <button id="send-location">Send Location</button>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/chat.js"></script>
+    <div class="centered-form">
+      <div class="centered-form__box">
+        <h1>Join</h1>
+        <form action="./chat.html">
+          <label>Display Name</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Display Name"
+            required`
+          />
+          <label>Room Name</label>
+          <input type="text" name="room" placeholder="Room" required />
+          <button>Join</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
